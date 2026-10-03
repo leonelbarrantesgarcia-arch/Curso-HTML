@@ -1,0 +1,12 @@
+h1 {
+    background: gray;
+    height: 50px;
+}
+
+input {
+    width: 90%;
+}
+
+form {
+    width: 300px;
+}
