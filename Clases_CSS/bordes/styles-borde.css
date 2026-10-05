@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    background: white;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    /* border-width: 4px;  
+    border-style: solid;
+    border-color: black;*/
+    border: 3px solid gray;
+    /*esto hace lo mismo que las tres líneas anteriores*/
+    /* border-top-width: 4px;  
+    border-top-style: solid;
+    border-top-color: black; (se usa para definir un lado específico ya sea top,left,bottom o right,)
+    border-top: 3px solid black; (tambien se puede simplificar) */
+    border-radius: 6px;
+    /*border-top-left-radius: 20px; esto hace que solo la esquina indicada sea redondeada ya sea top,left,bottom o right
+    tambien se puede simplificar: border-radius: 20px 10px 50px 3px;*/
+}
+
+input {
+    margin: 5px;
+    padding: 6px 9px;
+    border: none;
+    border-bottom: 1px solid greenyellow;
+    background: transparent;
+    color: greenyellow;
+    border-radius: 4px;
+}
