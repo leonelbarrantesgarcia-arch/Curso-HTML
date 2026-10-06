@@ -1,0 +1,35 @@
+.box-rgb {
+    padding: 3rem;
+    background: rgb(144 80 120);
+    /*tambien se puede poner rgba(144, 80, 120, 0.8) que el alpha seria la opacidad */
+    margin: 1rem;
+    margin-left: 5rem;
+    text-align: center;
+    color: rgb(240, 195, 210);
+    border: 2px solid rgb(240, 195, 210);
+    font-family: sans-serif;
+}
+
+.box-hex {
+    padding: 3rem;
+    background: #a93b;
+    /*tambien se puede poner #aa9933bb para ser mas especifico el ultimo valor tambien seria la opacidad */
+    margin: 1rem;
+    margin-left: 5rem;
+    text-align: center;
+    color: #b64f;
+    border: 2px solid #b64f;
+    font-family: sans-serif;
+}
+
+.box-hsl {
+    padding: 3rem;
+    background: hsla(170, 60%, 50%);
+    /*tambien se puede poner hsla(170, 60%, 50%, 0.5) el ultimo valor tambien seria la opacidad */
+    margin: 1rem;
+    margin-left: 5rem;
+    text-align: center;
+    color: hsla(177, 90%, 20%);
+    border: 2px solid hsla(177, 90%, 20%);
+    font-family: sans-serif;
+}
