@@ -1,0 +1,39 @@
+body {
+    font-size: 2rem;
+    margin: 0;
+}
+
+div {
+    background: #ededed;
+    padding: 1rem;
+    /* hay medidas fisicas que se usan cuando se trabaja con el algo que se va a usar en la vida real tales como: cm, mm, in */
+    font-family: sans-serif;
+    border: 5px solid #999;
+    font-size: 1rem;
+    width: 80vw;
+    /*Va hacer igual al ancho total*/
+    width: 80vh;
+    /*va hacer igual al largo total*/
+    margin: 0;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1rem;
+    /* el rem tambien multiplica al elemeto padre y en caso de no encontarse multiplica po 16px que es el estandar */
+}
+
+span {
+    color: #999;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+p {
+    color: #555;
+    font-size: 1em;
+    /*el em multiplica el tamaño de fuente del elemento padre en este caso 20px*/
+}
