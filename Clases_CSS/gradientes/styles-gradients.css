@@ -1,0 +1,29 @@
+body {
+    background-color: #15aae6;
+    margin: 0;
+}
+
+.box {
+    width: 18rem;
+    height: 25rem;
+    background: linear-gradient(transparent, #000a);
+    /*tambien se puede poner de esta manera background: linear-gradient(to rigth, transparent, #000a); para especificar que lado se quiere el degradado ya sea rigth,left, top o bottom (se pueden poner mas de 2 colores y tambien definir el porcentaje de cada color */
+    /* background: radial-gradient(transparent, #000a); de esta forma el degradado se hace desde el centro, tambien existe el conic que seria tipo cono*/
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 1rem;
+    border-top: 6px solid #0b6c92;
+}
+
+img {
+    width: 18rem;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-family: sans-serif;
+}
