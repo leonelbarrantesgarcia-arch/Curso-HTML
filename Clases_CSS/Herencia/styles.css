@@ -1,0 +1,14 @@
+body {
+    color: blue;
+
+}
+
+div {
+    color: brown;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: inherit;
+    /*tambien existe initial que sirve para volover al valor por defecto tambien unset y revert*/
+}
