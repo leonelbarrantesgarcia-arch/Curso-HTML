@@ -1,0 +1,19 @@
+#titulo {
+    /*este es mas especifico por lo tanto se tomara este color como primera opcion*/
+    color: green;
+}
+
+.titulo {
+    /*esta seria la segunda opcion mas especifica si no hay una masa especifica se tomara este color*/
+    color: red;
+}
+
+h1 {
+    /*esta que es la menos especifica si no hay otra se tomara este color*/
+    color: blue;
+}
+
+h1 {
+    /*por ultimo esta el !important que si esta automaticamente se volveria la especificacion mas importante y si hay varios important tomara el que tenga mayor especificacion */
+    color: goldenrod !important;
+}
