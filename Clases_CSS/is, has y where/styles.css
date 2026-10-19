@@ -1,0 +1,43 @@
+section.elemento1,
+section.elemento1,
+section.elemento1 {
+    color: red;
+}
+
+/*modificando los elemento 1,2,3 que estan dentro de un section*/
+section:is(.elemento1, .elemento2, .elemento3) {
+    color: blue;
+}
+
+/*si queremos que no cambie la especificidad, usamos un where()*/
+section:where(.elemento1, .elemento2, .elemento3) {
+    color: blue;
+}
+
+section:has(.elmento1) {
+    background-color: #000;
+    color: #fff;
+}
+
+/*em caso de que a ul le siga un div modificamos el ul*/
+ul:has(div) {
+    background-color: blue;
+}
+
+div {
+    padding: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+/*Seleccionando inputs invalidos pero se modifica el label*/
+label:has(input:invalid) {
+    color: #f00;
+}
+
+/*Seleccionando inputs validos pero se modifica el label*/
+label:has(input:valid) {
+    color: #0f0;
+}
