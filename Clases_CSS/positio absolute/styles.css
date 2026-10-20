@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: #ccc;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.contenedor {
+    border: 2px solid #000;
+    margin: 1.8rem 3rem;
+    background-color: #fff;
+    position: relative;
+    height: 18rem;
+}
+
+.box {
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: #ca6;
+    color: #fff;
+}
+
+.box--blue {
+    background-color: #37d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.box--red {
+    background-color: #e53;
+}
