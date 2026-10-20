@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background-color: #ededed;
+}
+
+.box {
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: orange;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.box--blue {
+    background-color: blue;
+    top: 3rem;
+    left: 1.2rem;
+    z-index: 20;
+}
+
+.box:first-child {
+    top: 8rem;
+    left: 2.5rem;
+    background-color: red;
+    z-index: 30;
+}
