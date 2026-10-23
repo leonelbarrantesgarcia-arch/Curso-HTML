@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #CCC;
+}
+
+.box {
+    width: 15rem;
+    height: 3.12rem;
+    margin: auto;
+    margin-top: 3.12rem;
+    background-color: #fff;
+    border: 2px solid #0009;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+h1 {
+    text-wrap: balance;
+}
