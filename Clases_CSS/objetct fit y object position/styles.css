@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+img {
+    width: 25rem;
+    height: 12.5rem;
+    object-fit: contain;
+    /* fill: estira y deforma para llenar la caja 
+    object-fit: contain; muestra completa sin deformar, deja espacios 
+    object-fit: cover; llena la caja sin deformar, recorta lo que sobra suele ser el más usado 
+    object-fit: none; tamaño original, no escala, puede recortarse 
+    object-fit: scale-down; como none o contain, el que sea más pequeño 
+    object-position: mueve la imagen dentro de su caja (ej: center, top, 50% 50%) */
+    border: 2px solid #000;
+    margin-top: 3.1rem;
+    margin-left: 3.1rem;
+}
