@@ -1,0 +1,14 @@
+header {
+    margin: 10rem;
+}
+
+/* Emmet en CSS: abreviatura + Tab = propiedad completa 
+La UNIDAD depende de lo que escribas después del valor: 
+Ejemplo con margin (m): 
+m10 → margin: 10px; (número sin unidad = px por defecto) 
+m1em → margin: 1em; (escribes "em" → usa em) 
+m1rem → margin: 1rem; (escribes "rem" → usa rem) 
+m10-20 → margin: 10px 20px; (guion = varios valores) 
+Igual con padding (p), width (w), font-size (fz)... 
+w100     → width: 100px;   |   w50%  → width: 50%; 
+/* fz1.5rem → font-size: 1.5rem; */
