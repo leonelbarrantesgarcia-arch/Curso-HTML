@@ -1,0 +1,55 @@
+header {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div,
+body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-wrap: Define si los elementos dentro de un contenedor flex 
+    se mantienen en una sola línea o si pueden saltar a una nueva línea 
+    cuando no caben en el espacio disponible.
+    Valores :
+    nowrap → Todos los elementos en una sola línea, aunque se desborden o se compriman.
+    wrap → Los elementos saltan a una nueva línea (debajo) cuando ya no caben en la línea actual.
+    wrap-reverse → Igual que wrap, pero las nuevas líneas se colocan  arriba en lugar de abajo (el orden de las líneas se invierte).*/
+    flex-flow: row wrap;
+    /*flex-flow: Es un "atajo" que combina en una sola línea las propiedades flex-direction y flex-wrap.
+    Sintaxis:
+    flex-flow: <flex-direction> <flex-wrap>;
+    El orden puede ser cualquiera, pero lo más común es poner primero 
+    la dirección y luego el wrap. Si omites un valor, se usa el default.
+    Ejemplos equivalentes:
+
+    (flex-direction: row;
+    flex-wrap: wrap;) es lo mismo que: flex-flow: row wrap; 
+
+    (flex-direction: column;
+    flex-wrap: nowrap;) es lo mismo que: flex-flow: column nowrap;*/
+    margin: 1.2rem;
+    border: 2px solid #000;
+}
+
+.flex-item {
+    width: 6.25rem;
+    background-color: #800;
+    margin: 0.6rem;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}

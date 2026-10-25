@@ -1,0 +1,33 @@
+header {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: Define la dirección en la que se colocan los elementos 
+    row → Elementos en fila, de izquierda a derecha.
+    row-reverse → Elementos en fila, pero de derecha a izquierda.
+    column → Elementos en columna, de arriba hacia abajo.
+    column-reverse → Elementos en columna, pero de abajo hacia arriba.
+*/
+}
+
+.flex-item {
+    height: 6.25rem;
+    width: 15.62rem;
+    background-color: #800;
+    margin: 0.6rem;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}
