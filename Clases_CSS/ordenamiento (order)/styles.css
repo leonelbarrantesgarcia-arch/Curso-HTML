@@ -1,0 +1,45 @@
+header {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div,
+body {
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1.2rem;
+    border: 2px solid #000;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6.25rem;
+    background-color: #fff;
+}
+
+.flex-item {
+    background-color: #800;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 6.25rem;
+    order: 1;
+    /*order: Define el orden en que se muestran los elementos dentro de un contenedor flex. Por defecto todos los elementos tienen order: 0, y se muestran en el orden en que aparecen en el HTML.
+    Cuanto MENOR sea el valor de order, ANTES aparece el elemento.
+    Cuanto MAYOR sea el valor de order, DESPUÉS aparece el elemento.
+    Los valores pueden ser negativos (ej. -1) y no hace falta que sean consecutivos.
+    Importante: order cambia solo el orden VISUAL, no el orden en el HTML */
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+    order: 3;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+    order: 2;
+}
