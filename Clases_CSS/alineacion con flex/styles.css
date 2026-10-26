@@ -1,0 +1,66 @@
+header {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div,
+body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1.2rem;
+    border: 2px solid #000;
+    justify-content: space-evenly;
+    /* justify-content: Controla cómo se distribuyen los elementos a lo largo del EJE PRINCIPAL (el definido por flex-direction). Es decir, si es row → distribuye horizontalmente; si es column → verticalmente.
+    Valores más comunes:
+    flex-start → Todos los elementos agrupados al inicio del eje.
+    flex-end → Todos agrupados al final del eje.
+    center → Todos agrupados al centro del eje.
+    space-between → Primero al inicio, último al final, espacio igual entre ellos.
+    space-around → Espacio igual alrededor de cada elemento (los extremos quedan con la mitad de espacio que entre elementos).
+    space-evenly → Espacio EXACTAMENTE igual entre todos los elementos y también en los extremos (incluyendo bordes).*/
+    align-items: center;
+    /*align-items: Controla cómo se alinean los elementos a lo largo del 
+    EJE CRUZADO (perpendicular al eje principal). 
+    Se usa NORMALMENTE para alinear en UNA SOLA LÍNEA de elementos.
+    Si flex-direction: row  → alinea verticalmente.
+    Si flex-direction: column → alinea horizontalmente.
+    Valores más comunes:
+    stretch → Los elementos se estiran para ocupar todo el alto/ancho del contenedor (valor por defecto).
+    flex-start → Alineados al inicio del eje cruzado (arriba en row).
+    flex-end → Alineados al final del eje cruzado (abajo en row).
+    center → Centrados en el eje cruzado.
+    baseline → Alineados según la línea base del texto.*/
+    align-content: center;
+    /*align-content: Controla cómo se distribuyen las LÍNEAS (no los elementos) a lo largo del eje cruzado. Solo tiene efecto cuando hay MÚLTIPLES LÍNEAS, es decir, cuando flex-wrap: wrap (o wrap-reverse) y los elementos ocupan más de una línea.
+    Si solo hay UNA línea, align-content NO hace nada (para eso se usa align-items).
+    Valores más comunes:
+    flex-start → Líneas agrupadas al inicio del eje cruzado.
+    flex-end → Líneas agrupadas al final.
+    center → Líneas agrupadas al centro.
+    space-between → Primera línea al inicio, última al final, espacio igual entre.
+    space-around → Espacio igual alrededor de cada línea.
+    space-evenly → Espacio exactamente igual entre líneas y en lo extremos.
+    stretch → Las líneas se estiran para ocupar todo el espacio (default).*/
+    height: 22.5rem;
+}
+
+.flex-item {
+    background-color: #800;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 6.25rem;
+    height: 3.12rem;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}
