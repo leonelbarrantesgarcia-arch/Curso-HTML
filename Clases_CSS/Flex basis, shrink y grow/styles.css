@@ -1,0 +1,72 @@
+header {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div,
+body {
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1.2rem;
+    align-items: center;
+    border: 2px solid #000;
+    gap: 0.6rem;
+    /*gap: Define el ESPACIO (separación) entre los elementos hijos de un 
+    contenedor flex (también funciona en grid). Es mucho más limpio que 
+    usar margins en los hijos.
+    Sintaxis:
+    gap: <row-gap> <column-gap>;
+    gap: <valor>; ← mismo espacio en filas y columnas
+    Valores:
+    <length> → px, rem, em, %, etc. (ej: 10px, 1rem).
+    normal → valor por defecto del navegador (equivale a 0 en flex).*/
+}
+
+.flex-item {
+    background-color: #800;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    flex-basis: 6.25rem;
+    /* flex-basis: Define el TAMAÑO INICIAL de un elemento flex ANTES de que 
+    se reparta el espacio sobrante o se comprima. Es como un "width" (o "height" 
+    si la dirección es column), pero específico para flex.
+    Valores posibles:
+    auto → usa el tamaño del contenido o el width/height declarado (default).
+    <length> → tamaño fijo, ej: 100px, 50%, 10rem.
+    content → se basa en el tamaño del contenido.
+*/
+    flex-shrink: 1;
+    /*flex-shrink: Define cuánto puede ENCOGERSE un elemento cuando NO hay 
+    espacio suficiente en el contenedor (lo contrario de flex-grow).
+    Valores:
+    1 → se puede encoger (valor por defecto).
+    0 → NO se encoge nunca (mantiene su flex-basis, aunque desborde).
+    2 → se encoge el doble que un hermano con flex-shrink: 1.*/
+    flex-grow: 1;
+    /*flex-grow: Define cuánto puede CRECER un elemento para ocupar el espacio 
+    sobrante del contenedor. Es un "factor de proporción" entre hermanos.
+    Valores:
+    0 → no crece (valor por defecto).
+    1 → crece ocupando una parte del espacio libre.
+    2 → crece el doble que un hermano con flex-grow: 1.
+    Si TODOS tienen flex-grow: 1 → se reparten el espacio por igual*/
+    flex: 1 1 6.25rem;
+    /*flex: Es un ATAJO que combina en una sola línea:
+    flex-grow  flex-shrink  flex-basis
+    Sintaxis:
+    flex: <grow> <shrink> <basis>;*/
+}
+
+.flex-item:nth-child(2n) {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}
