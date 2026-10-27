@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #37d;
+    color: #fff;
+}
+
+body,
+div,
+header,
+nav,
+ul,
+h1,
+h2,
+p,
+img {
+    box-sizing: border-box;
+}
+
+/*HEADER SECTION*/
+
+.header {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url("header-background.webp");
+    background-size: cover;
+    display: flex;
+}
+
+.header__overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #37d6;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__item-container {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 43.75rem;
+}
+
+.header__item-container p {
+    text-wrap: pretty;
+}
+
+.header__img {
+    min-width: 12.5rem;
+    max-width: 40%;
+    border-radius: 50%;
+    border: 6px solid #5085d4cc;
+    margin: 1.2rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.6rem;
+    text-wrap: balance;
+}
+
+/* --- NAVBAR SECTION*/
+.nav {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem 1.25rem;
+    position: sticky;
+    top: 0;
+    margin-bottom: 0.6rem;
+    box-shadow: 0 0 1.5rem #0009;
+}
+
+.nav__ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__ul-container {
+    flex-grow: 4;
+}
+
+.nav__logo-container,
+.nav__ul-container {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav__link {
+    color: #37d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 0.625rem;
+    border-radius: 0;
+    transition: background-color 0.24s, border-radius 0.2s, outline 0.2s, outline-offset 0.2s;
+    margin: 0.12;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__link:hover {
+    background-color: #37d3;
+    border-radius: 1.2rem;
+    outline: 0.12rem solid #37d6;
+    outline-offset: -0.5rem;
+}
+
+.link--login {
+    background-color: #37d;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    margin-left: 0.37rem;
+}
+
+.link--login:hover {
+    background-color: #37d9;
+    outline: none;
+
+}
+
+.nav__logo {
+    width: 3.12rem;
+}
+
+/*main section*/
+main {
+    max-width: 40rem;
+    margin: auto;
+    font-size: 1, 8rem;
+}
