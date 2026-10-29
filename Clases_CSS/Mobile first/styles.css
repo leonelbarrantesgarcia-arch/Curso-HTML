@@ -130,15 +130,14 @@ footer {
 
 /*el Mobile first se crea primero con resolucion de telefono y se adapta ah otros dispositivos mas grandes despues */
 
-@media screen and (max-width: 30rem) {
-
+@media screen and (min-width: 30rem) {
     .main-wrapper {
         flex-direction: row;
     }
 }
 
 
-@media screen and (max-width: 50rem) {
+@media screen and (min-width: 50rem) {
     aside:last-child {
         display: block;
     }
