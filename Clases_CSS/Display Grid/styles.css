@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    /* display: grid; Organiza los elementos en filas y columnas. */
+    display: grid;
+    /* grid-template-columns: Define el ancho y la cantidad de columnas. */
+    grid-template-columns: 6.25rem 12.5rem 18.75rem;
+    /* grid-template-rows: Define el alto y la cantidad de filas. */
+    grid-template-rows: 25rem 12.5rem;
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 0.625rem;
+    padding: 0.625rem;
+    font-size: 1.875rem;
+    color: #fff;
+}
