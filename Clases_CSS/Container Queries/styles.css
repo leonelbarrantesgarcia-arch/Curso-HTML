@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    container-type: inline-size;
+    container-name: main;
+    color: #0f0;
+}
+
+p {
+    font-size: 0.5rem;
+}
+
+/* @container: Permite aplicar estilos según el tamaño de un contenedor, en lugar del tamaño de la pantalla. */
+@container main (max-width: 37.5rem) {
+    p {
+        font-size: 1.25rem;
+        color: #f00;
+        background-color: #000;
+    }
+}
