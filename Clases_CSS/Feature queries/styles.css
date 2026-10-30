@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* @supports: Aplica estilos si el navegador admite una propiedad de CSS. */
+
+@supports (display: grid) {
+    body {
+        display: grid;
+    }
+}
+
+/* @supports not: Aplica estilos si el navegador NO admite esa propiedad. */
+
+@supports not (display: grid) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}

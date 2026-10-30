@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    height: 80vh;
+    /* fr: Reparte el espacio disponible en proporciones.
+    En este caso, las columnas ocupan 4, 2 y 3 partes del espacio. */
+    grid-template-columns: 4fr 2fr 3fr;
+    /* auto: Ajusta automáticamente el tamaño de las filas
+    según su contenido. */
+    grid-template-rows: auto auto;
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 0.625rem;
+    padding: 0.625rem;
+    font-size: 1.875rem;
+    color: #fff;
+}
