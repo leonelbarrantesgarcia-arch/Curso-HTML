@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #999;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 12.5rem);
+    grid-auto-rows: 9.37rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 6.25rem;
+    border: 3px solid #000;
+    /* gap: Define el espacio de separación entre las filas y columnas del Grid. En este caso, la separación es de 1.25rem. */
+    gap: 1.25rem;
+    padding: 1.25rem;
+    width: 90vw;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 1.875rem;
+}
+
+.grid-item {
+    background-color: #48e;
+    padding: 0.625rem;
+    font-size: 1.875rem;
+    color: #fff;
+}
