@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    /* minmax(): Define un tamaño mínimo y máximo para una columna o fila.
+   En este caso, puede medir entre 6.25rem y 18.75rem. */
+    grid-template-columns: repeat(2, minmax(6.25rem, 18.75rem)) 1fr;
+    /* repeat(): Permite repetir un tamaño o patrón de columnas o filas sin escribirlo varias veces. */
+    grid-template-rows: repeat(2, 12.5rem) 1fr;
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 0.625rem;
+    padding: 0.625rem;
+    font-size: 1.875rem;
+    color: #fff;
+}
