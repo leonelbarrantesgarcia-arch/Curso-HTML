@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    height: 80vh;
+    /* Grid explícito: Son las filas y columnas que definimos directamente
+   con grid-template-columns y grid-template-rows. */
+    grid-template-columns: repeat(3, 12.5rem);
+    grid-template-rows: repeat(3, 12.5rem);
+    /* Grid implícito: Son las filas o columnas que se crean automáticamente
+    cuando los elementos necesitan más espacio en el Grid.
+    grid-auto-rows: Define el alto de las filas creadas automáticamente. */
+    grid-auto-rows: 9.37rem;
+    /* grid-auto-flow: Define cómo se colocan los elementos automáticamente. En este caso, column hace que se coloquen por columnas. */
+    grid-auto-flow: column;
+    /* grid-auto-columns: Define el ancho de las columnas creadas automáticamente. */
+    grid-auto-columns: 6.25rem;
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 0.625rem;
+    padding: 0.625rem;
+    font-size: 1.875rem;
+    color: #fff;
+}
