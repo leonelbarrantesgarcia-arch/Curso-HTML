@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    /* auto-fill: Crea tantas columnas o filas como quepan en el contenedor, manteniendo los espacios aunque no haya elementos que los ocupen. */
+    grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+    /* auto-fit: Crea tantas columnas o filas como quepan en el contenedor, pero contrae los espacios vacíos para aprovechar mejor el espacio. */
+    grid-template-rows: repeat(auto-fit, 12.5rem);
+    grid-auto-rows: 9.37rem;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    margin: auto;
+    margin-top: 1.875rem;
+    gap: 1.25rem;
+}
+
+.grid-item {
+    background-color: #48e;
+    padding: 0.625rem;
+    font-size: 1.875rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr));
+    }
+
+}
