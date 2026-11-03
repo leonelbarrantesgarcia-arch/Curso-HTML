@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+}
+
+body,
+div {
+    box-sizing: border-box;
+}
+
+/* =========================================
+    VALORES DE ALINEACIÓN EN CSS GRID
+   ========================================= */
+
+/* start: Alinea los elementos al inicio del espacio disponible.
+Se usa en: justify-items, align-items, justify-content,
+align-content, justify-self y align-self. */
+
+/* end: Alinea los elementos al final del espacio disponible.
+Se usa en: justify-items, align-items, justify-content,
+align-content, justify-self y align-self. */
+
+/* center: Coloca los elementos en el centro del espacio disponible.
+Se usa en: justify-items, align-items, justify-content,
+align-content, justify-self y align-self. */
+
+/* stretch: Estira los elementos o las pistas del Grid para
+aprovechar el espacio disponible.
+Se usa en: justify-items, align-items, justify-content,
+align-content, justify-self y align-self. */
+
+/* space-between: Distribuye el espacio entre las filas o columnas,
+sin agregar espacio adicional en los extremos.
+Se usa en: justify-content y align-content. */
+
+/* space-around: Distribuye el espacio alrededor de las filas
+o columnas, dejando la mitad de espacio en los extremos.
+Se usa en: justify-content y align-content. */
+
+/* space-evenly: Distribuye las filas o columnas dejando
+espacios iguales entre ellas y los extremos.
+Se usa en: justify-content y align-content. */
+
+/* baseline: Alinea los elementos tomando como referencia
+la línea base de su contenido, normalmente el texto.
+Se usa en: justify-items, align-items,
+justify-self y align-self. */
+
+/* self-start: Alinea un elemento al inicio según
+la dirección de escritura del propio elemento.
+Se usa en: justify-items, align-items,
+justify-self y align-self. */
+
+/* self-end: Alinea un elemento al final según
+la dirección de escritura del propio elemento.
+Se usa en: justify-items, align-items,
+justify-self y align-self. */
+
+/* safe center: Centra los elementos, pero evita que
+se desborden por el inicio si no hay suficiente espacio.
+Se usa con las propiedades de alineación compatibles. */
+
+/* unsafe center: Centra los elementos aunque puedan
+desbordarse del contenedor.
+Se usa con las propiedades de alineación compatibles. */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 3.125rem);
+    gap: 0.625rem;
+    padding: 0.625rem;
+    /* justify-items: Alinea los elementos horizontalmente dentro de sus celdas. */
+    justify-items: stretch;
+    /* justify-content: Distribuye horizontalmente todo el Grid dentro del contenedor. */
+    justify-content: space-evenly;
+    /* align-items: Alinea los elementos verticalmente dentro de sus celdas.*/
+    align-items: stretch;
+    /* align-content: Distribuye verticalmente todo el Grid dentro del contenedor. */
+    align-content: space-evenly;
+    height: 21.875rem;
+    border: 2px solid #000;
+    margin: 1.25rem;
+}
+
+.grid-item:first-child {
+    /* justify-self: Alinea horizontalmente un elemento individual dentro de su celda.*/
+    justify-self: end;
+    /* align-self: Alinea verticalmente un elemento individual dentro de su celda. */
+    align-self: end;
+    background-color: #e66;
+}
+
+.grid-item {
+    background-color: #48e;
+    color: #fff;
+    font-size: 1.875rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}

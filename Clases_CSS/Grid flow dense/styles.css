@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body,
+div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9.375rem, 1fr));
+    /*dense Intenta rellenar los espacios vacíos del Grid
+   colocando elementos que quepan en ellos, aunque cambie su orden visual. */
+    grid-auto-flow: dense;
+    margin: auto;
+    gap: 0.625rem;
+    padding: 0.625rem;
+    min-height: 100vh;
+}
+
+.grid-item {
+    background-color: #48e;
+    font-size: 1.875rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    background-image: url("id_win.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(10) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}

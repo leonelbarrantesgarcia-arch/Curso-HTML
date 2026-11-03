@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+}
+
+body,
+div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.625rem;
+    padding: 0.625rem;
+    justify-items: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: space-evenly;
+    border: 2px solid #000;
+    margin: 1.25rem;
+}
+
+.grid-item:first-child {
+    grid-area: 3/1/ span 2/span 2;
+    display: grid;
+    /* subgrid: Permite que un Grid hijo utilice las filas o columnas
+   definidas en el Grid padre, manteniendo la misma distribución. */
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    gap: 0.625rem;
+    padding: 0;
+    background-color: transparent;
+}
+
+.subgrid-item {
+    background-color: #e66;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.subgrid-item:first-child {
+    order: 2;
+    background-color: #4e4;
+    width: 21.875rem;
+}
+
+.grid-item {
+    background-color: #48e;
+    color: #fff;
+    font-size: 1.875rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}
