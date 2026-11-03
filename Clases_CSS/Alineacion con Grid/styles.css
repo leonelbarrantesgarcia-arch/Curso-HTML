@@ -1,11 +1,5 @@
 body {
-    margin: 0;
     font-family: sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    background-color: #48e2;
 }
 
 body,
