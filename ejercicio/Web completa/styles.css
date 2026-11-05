@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,13 @@ label {
     align-items: center;
     container-type: inline-size;
     container-name: header;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-size: 1.1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 1.5rem #0009;
 }
 
 .header__open-nav-button {
@@ -68,8 +76,8 @@ label {
 
 .header__logo {
     max-width: 100%;
-    width: 4rem;
-    margin: 0.625rem 1.25rem;
+    width: 3.5rem;
+    margin: 0.125rem 1rem;
 }
 
 .header__nav-item {
@@ -182,20 +190,20 @@ h1 {
     padding: 0.25rem 0.375rem;
 }
 
-.bar--95 {
-    width: 95%;
+.bar--70 {
+    width: 70%;
 }
 
-.bar--90 {
-    width: 90%;
-}
-
-.bar--85 {
-    width: 85%;
+.bar--65 {
+    width: 65%;
 }
 
 .bar--80 {
     width: 80%;
+}
+
+.bar--50 {
+    width: 50%;
 }
 
 .bar--75 {
@@ -209,16 +217,17 @@ h1 {
         flex-direction: row;
         padding: 1.25rem;
         background-color: transparent;
-        height: 90vh;
+        min-height: 90vh;
+        height: auto;
         margin: auto;
     }
 
-    .profile__data.container {
+    .profile__data-container {
         background-color: #fff;
         display: flex;
         align-items: center;
         border-radius: 0 25px 25px 0;
-        box-shadow: 0 0 0 0.56rem #0002;
+        box-shadow: 0 0 0.56rem #0002;
     }
 
     h1 {
@@ -243,8 +252,182 @@ h1 {
     }
 }
 
+
 /*------- PROFILE ENDS---------*/
 
 /*------- PRORTFOLIO SECTION---------*/
+.portfolio {
+    background-color: #18233f;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    container-name: portfolio;
+    container-type: inline-size;
+    justify-content: space-evenly;
+}
+
+.portfolio__title {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.portfolio__project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 81.25rem;
+    margin: auto;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    min-height: 80vh;
+}
+
+.portfolio__project {
+    background-image: linear-gradient(#0009, #0009), url("Leo.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+}
+
+.portfolio__project:hover {
+    opacity: 0.74;
+    outline: 2px solid #fff6;
+}
+
 /*------- PRORTFOLIO QUERIES---------*/
+
+@container portfolio (min-width: 56.25rem) {
+    .portfolio__project-container {
+        grid-template-columns: repeat(auto-fill, minmax(26.25rem, 1fr));
+    }
+
+    .portfolio__project:first-child {
+        grid-column: span 2;
+    }
+
+    .portfolio__project:nth-child(6) {
+        grid-column: span 2;
+    }
+}
+
+@container portfolio (min-width: 75rem) {
+    .portfolio__project-container {
+        grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    }
+
+    .portfolio__project:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .portfolio__project:nth-child(6) {
+        grid-column: span 4;
+    }
+}
+
 /*------- PRORTFOLIO ENDS---------*/
+
+/*------- CONTACT SECTION---------*/
+.form {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875rem 0;
+    container-name: form;
+    container-type: inline-size;
+}
+
+.form__form {
+    font-size: 0.75rem;
+    max-width: 37.5rem;
+    width: 100%;
+    display: grid;
+    margin-bottom: 1.875rem;
+}
+
+.form__input-container :is(input, textarea) {
+    width: 100%;
+    padding: 0.5625rem;
+    font-size: 1rem;
+    margin: 0.25rem;
+    border: none;
+    box-shadow: 0.125rem 0.125rem 0.25rem #0003;
+    background-color: #fffd;
+}
+
+.form__input-container textarea {
+    resize: none;
+    min-height: 7.5rem;
+    font-family: inherit;
+}
+
+.form__input-container input[type="submit"] {
+    padding: 0.75rem;
+    background-color: #48e;
+    color: #fff;
+}
+
+.form_title {
+    font-size: 2.5rem;
+}
+
+/*------- CONTACT QUERIES---------*/
+@container form (min-width: 56.25rem) {
+    .form__form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "name lastname"
+            "email email"
+            "message message"
+            "button button";
+        gap: 0.75rem;
+        background-image: radial-gradient(#18233f06, #18233f33);
+        padding: 1.875rem;
+        border-radius: 12px;
+        box-shadow: 0 0 2.5rem #0006;
+    }
+
+    .form__input-container:first-child {
+        grid-area: name;
+    }
+
+    .form__input-container:nth-child(2) {
+        grid-area: lastname;
+    }
+
+    .form__input-container:nth-child(3) {
+        grid-area: email;
+    }
+
+    .form__input-container:nth-child(4) {
+        grid-area: message;
+    }
+
+    .form__input-container:nth-child(5) {
+        grid-area: button;
+    }
+
+    .form__input-container :is(input, textarea) {
+        box-shadow: none;
+        border-radius: 4px;
+    }
+}
+
+/*------- CONTACT ENDS---------*/
+
+/*------- FOOTER SECTION---------*/
+footer {
+    padding: 3.75rem;
+    text-align: center;
+    background-color: #18233f;
+    color: #fffd;
+    font-size: 1.375rem;
+}
+
+/*------- FOOTER ENDS---------*/
