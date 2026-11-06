@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    background-color: #ccc;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 1.25rem;
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 0.375rem;
+    border-radius: 39px;
+}
+
+.barra {
+    padding: 2.5rem;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    /* animation-name: Indica el nombre de la animación que se va a utilizar.*/
+    animation-name: llenar-barra;
+    /* animation-duration: Define cuánto tiempo dura la animación. En este caso, dura 4 segundos.*/
+    animation-duration: 4s;
+    /* animation-delay: Define cuánto tiempo espera antes de iniciar. En este caso, espera 2 segundos. */
+    animation-delay: 2s;
+    /* animation-fill-mode: Define cómo se aplican los estilos de la animación antes y después de ejecutarse. both aplica los estilos iniciales durante la espera y conserva los finales cuando termina. */
+    animation-fill-mode: both;
+    /* animation-iteration-count: Define cuántas veces se repite la animación.
+    infinite hace que se repita indefinidamente. */
+    animation-iteration-count: infinite;
+    /* animation-direction: Define la dirección de la animación.
+   alternate hace que vaya del inicio al final y luego regrese. */
+    animation-direction: alternate;
+}
+
+.barra:active {
+    /* animation-play-state: Controla si la animación se ejecuta o se pausa.
+   paused mantiene la animación en pausa hasta que se reanude. */
+    animation-play-state: paused;
+}
+
+
+/* @keyframes: Permite crear una animación definiendo cómo cambian las propiedades de un elemento. */
+@keyframes llenar-barra {
+
+    /* from: Define el estado inicial de la animación. En este caso, la barra comienza con un ancho de 0%. */
+    from {
+        width: 0%;
+    }
+
+    /* to: Define el estado final de la animación. En este caso, la barra llega al 100% de ancho y cambia su color de fondo a rojo. */
+    to {
+        width: 100%;
+        background-color: #f33;
+    }
+}
