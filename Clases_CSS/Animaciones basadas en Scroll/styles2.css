@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    background-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+    ANIMACIONES BASADAS EN LA VISIBILIDAD (VIEW-TIMELINE)
+
+    view-timeline permite crear animaciones que avanzan según
+    la visibilidad de un elemento dentro de la pantalla.
+
+    A diferencia de scroll-timeline, que depende del desplazamiento
+    de un contenedor, view-timeline depende de la posición y
+    visibilidad del propio elemento.
+
+    También se puede utilizar animation-timeline: view();
+    directamente, sin necesidad de crear una línea de tiempo
+    personalizada con view-timeline.
+
+    La animación no se ejecuta simplemente al aparecer el elemento,
+    sino que su progreso depende de cuánto se desplaza a través
+    del área visible de la pantalla.
+*/
+.crecedor {
+    height: 100vh;
+}
+
+.box {
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 1.25rem;
+    animation: llenar-barra;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+}
+
+@keyframes llenar-barra {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+        background-color: #f33;
+    }
+}
