@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    background-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.crecedor {
+    height: 100vh;
+}
+
+.box {
+    height: 12.5rem;
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 1.25rem;
+    animation: llenar-barra both;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    /*
+    ANIMATION-RANGE-START Y ANIMATION-RANGE-END
+
+    Permiten definir cuándo comienza y termina una animación
+    según la visibilidad del elemento.
+
+    animation-range-start: contain 10%;
+    Inicia la animación al alcanzar el 10% del rango contain.
+
+    animation-range-end: cover 90%;
+    Termina la animación al alcanzar el 90% del rango cover.
+
+    RANGOS:
+    cover: Desde que el elemento entra hasta que sale.
+    contain: Cuando el elemento está completamente visible.
+    entry: Mientras el elemento entra en pantalla.
+    exit: Mientras el elemento sale de pantalla.
+*/
+    animation-range-start: contain 10%;
+    animation-range-end: cover 90%;
+}
+
+@keyframes llenar-barra {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
