@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.box {
+    margin: auto;
+    padding: 1.25rem 3.125rem;
+    /* filter: Aplica efectos visuales al elemento, como desenfoque, brillo, contraste o escala de grises. */
+    filter: drop-shadow(0 0 1rem #000);
+    /* backdrop-filter: Aplica efectos visuales al fondo que está detrás del elemento, sin afectar directamente su contenido. */
+    backdrop-filter: blur(0.625rem) brightness(4);
+    position: absolute;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
