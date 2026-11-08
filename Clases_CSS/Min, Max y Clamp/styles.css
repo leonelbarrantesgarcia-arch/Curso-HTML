@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 1.25rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #48e;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    margin: 7.5rem auto;
+    font-size: 1.875rem;
+    padding: 0 2.5rem;
+    /* min(): Utiliza el valor más pequeño entre los valores indicados.
+
+    max(): Utiliza el valor más grande entre los valores indicados. 
+
+    clamp(): Establece un valor mínimo, uno ideal y uno máximo, permitiendo que el tamaño se adapte sin superar esos límites. Es la función más utilizada de las tres para diseños responsivos. */
+    font-size: clamp(2.4rem, 2.2vw, 4rem);
+    border: 6px solid #000;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+}

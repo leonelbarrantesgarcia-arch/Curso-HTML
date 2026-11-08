@@ -1,0 +1,47 @@
+:root {
+    /* --color-principal: Es una variable CSS que almacena un valor para reutilizarlo. Se crea usando dos guiones (--) y normalmente se define en :root para usarla en toda la página. */
+    --color-principal: #48e;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 1.25rem;
+    --tamaño-principal: 2.4rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    --color-principal: #f44;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    margin: 7.5rem auto;
+    font-size: 1.875rem;
+    padding: 0 2.5rem;
+    font-size: clamp(var(--tamaño-principal), 2.2vw, 4rem);
+    border: 6px solid #000;
+}
+
+.box:first-child {
+    /* var(--color-principal): Permite utilizar el valor almacenado en la variable CSS. */
+    background-color: var(--color-principal);
+}
+
+.box:nth-child(2) {
+    color: var(--color-principal);
+    border: 6px solid var(--color-principal);
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+}
+
+body>p {
+    color: var(--color-principal);
+    font-size: 3.75rem;
+}
