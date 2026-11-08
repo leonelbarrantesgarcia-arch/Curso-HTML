@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.box {
+    font-size: 1.875rem;
+    width: fit-content;
+    padding: 20rem;
+    /* color-mix(): Permite mezclar dos colores en diferentes proporciones para crear un nuevo color. */
+    background-color: color-mix(in srgb, #f44 30%, #48e 30%);
+}
