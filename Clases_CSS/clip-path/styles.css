@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #101632dd;
+}
+
+img {
+    max-width: 100%;
+    /* clip-path: Permite recortar un elemento en diferentes formas (círculos, polígonos, etc.), ocultando las partes que quedan fuera de la figura definida. 
+    circle(): Recorta el elemento en forma de círculo, permitiendo definir su tamaño y posición. */
+    clip-path: circle(80% at 0 0);
+}
+
+.img2 {
+    max-width: 100%;
+    /* ellipse(): Recorta el elemento en forma de óvalo, permitiendo definir sus radios y posición. */
+    clip-path: ellipse(35% 50% at 50% 50%);
+}
+
+.img3 {
+    max-width: 100%;
+    /* polygon(): Recorta el elemento creando una figura personalizada mediante puntos definidos con coordenadas. */
+    clip-path: polygon(21% 8%, 76% 8%, 100% 100%, 0% 100%);
+}
