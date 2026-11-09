@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    font-size: 1.875rem;
+    padding: 0 2.5rem;
+    border: 6px solid #000;
+}
+
+p::first-letter {
+    /* initial-letter: Permite agrandar la primera letra de un texto para que ocupe varias líneas, como en libros o revistas. */
+    initial-letter: 2 1;
+    padding: 0.125rem;
+    padding-bottom: 0;
+    padding-left: 0.125rem;
+    color: #f44;
+    font-family: cursive;
+}

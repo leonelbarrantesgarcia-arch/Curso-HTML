@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    font-size: 1.875rem;
+    padding: 0 2.5rem;
+    border: 6px solid #000;
+    width: 50vh;
+    height: 100vh;
+    overflow: scroll;
+    /* scroll-behavior: Define si el desplazamiento es suave (smooth) o instantáneo (auto). */
+    scroll-behavior: smooth;
+    /* scrollbar-color: Permite cambiar el color de la barra de desplazamiento y su fondo. */
+    scrollbar-color: #48e #fff;
+    /* scrollbar-width: Define el grosor de la barra de desplazamiento (auto, thin o none). */
+    scrollbar-width: auto;
+}
+
+.crecer {
+    height: 200vh;
+}
