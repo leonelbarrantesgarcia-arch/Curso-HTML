@@ -88,6 +88,114 @@ body {
     color: #fff;
 }
 
+
+/* -------- MENÚ PRINCIPAL -------- */
+
+.header__main-nav {
+    display: flex;
+    align-items: center;
+    max-width: 80rem;
+    margin: auto;
+    padding: 1.25rem 0;
+    gap: 2rem;
+}
+
+/* -------- LOGOTIPO -------- */
+
+.header__logo-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header__logo {
+    width: 12rem;
+    height: auto;
+    display: block;
+}
+
+/* -------- ENLACES PRINCIPALES -------- */
+
+.header__main-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__main-link {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.header__main-link span {
+    font-size: 1.25rem;
+}
+
+.header__main-link:hover {
+    color: #f0b36b;
+}
+
+/* -------- BOTONES DE ACCION -------- */
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+.header__start {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #f0b36b;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.header__start span {
+    font-size: 1.25rem;
+}
+
+.header__start:hover {
+    color: #fff;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+    background: linear-gradient(110deg, #665044, #40335e);
+    border: 0.125rem solid #a68ad0;
+    border-radius: 0.5rem;
+}
+
+.header__contact span {
+    font-size: 1.25rem;
+}
+
+.header__contact:hover {
+    background: linear-gradient(110deg, #846047, #57417c);
+}
+
+
 /* -------- AIMACIONES -------- */
 
 @keyframes neon {
